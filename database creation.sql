@@ -1,0 +1,21 @@
+USE MASTER 
+GO
+
+CREATE DATABASE KasiFreshGrocersDB
+ON PRIMARY 
+(
+NAME = KasiFreshGrocersDBPrimaryFile ,
+FILENAME = 'C:\DATABASE\ITSSA0 ASSIGNMENT\ KasiFreshGrocersDBPrimaryFile.mdf',
+SIZE = 10MB ,
+MAXSIZE = UNLIMITED ,
+FILEGROWTH = 10%
+)
+
+LOG ON 
+(
+NAME = KasiFreshGrocersDBLogFile ,
+FILENAME = 'C:\DATABASE\ITSSA0 ASSIGNMENT\ KasiFreshGrocersDBLogFile.ldf',
+SIZE = 10MB ,
+MAXSIZE = UNLIMITED ,
+FILEGROWTH = 10%
+)
